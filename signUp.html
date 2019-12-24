@@ -1,0 +1,28 @@
+<html>
+    <head>
+       <title>register</title>
+        <link rel="stylesheet" href="page1.css"/> 
+    </head>
+    <body>
+        <form action="page1.html">
+        <input type="hidden" id="name&password" name="name&password" value=""></br>
+        <h1 id="signInHeader">Sign Up </h1> 
+        <div id="singInMain">
+        <p class="before_input">User name:</p> <input id="name" type="text" placeholder="enter your name" required/>
+        <div id="worng_name" class="worng"></div>
+        <p class="before_input">your mail:</p><input id="email" type="email" placeholder="your mail"/> </br>
+        <div id="worng_email" class="worng"></div>
+        <p class="before_input">Password:</p> <input id="password" type="password" placeholder="password" maxlength="8" required/>
+        <div id="worng_pass" class="worng"></div>
+        <p class="before_input"> Confirm password:</p> <input id="confirmPassword" type="password" placeholder="confirm password" maxlength="8" required/>
+        <div id="worng_confirm" class="worng"></div>
+         </br>
+        
+        <p id="c1"><input type="checkbox">remember me</p>
+            <button onclick="signIn()" id="createBtn">create</button>
+        <a href="page1.html"><button>cancel</button></a>
+        </form>
+        </div>
+        <script src="page1.js"></script>
+    </body>
+</html>
